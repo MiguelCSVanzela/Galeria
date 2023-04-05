@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #450ba4;
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 16px solid #260062;
+    text-transform: uppercase;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    background-color: #d4a0f7;
+    padding: 16px 0;
+    text-align: center;
+    display: none;
+}
+
+input,
+button {
+    padding: 8px;
+}
+
+button {
+    background-color: #d34afc;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#botao-cancelar {
+    background-color: #ff4000dc;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+}
+
+.descricao-imagem {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 16px;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.descricao-imagem a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .descricao-imagem {
+    opacity: 1;
+}

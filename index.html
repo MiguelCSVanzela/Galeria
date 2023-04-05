@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Galaria</title>
+</head>
+
+<body>
+    <header>
+        <h1>Galeria de Fotos</h1>
+        <button type="button">Nova Imagem +</button>
+    </header>
+
+    <form>
+        <h2>Inserir Imagem</h2>
+        <input type="url" id="endereco-nova-imagem" required placeholder="url da imagem" />
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="botao-cancelar">Cancelar</button>
+    </form>
+    <ul>
+        <li>
+            <img src="./images/foto1.jpg" alt="pintura de um gato" />
+            <div class="descricao-imagem">
+                <a href="./images/foto1.jpg" target="_blank" title="ver imagem completa">
+                    Ver Imagem Completa
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto2.jpg" alt="flamingo rosa com pescoço curvado" />
+            <div class="descricao-imagem">
+                <a href="./images/foto2.jpg" target="_blank" title="ver imagem completa">Ver Imagem Completa</a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto3.jpg" alt="filhotes de cães sendo segurado por um saco de pano" />
+            <div class="descricao-imagem">
+                <a href="./images/foto3.jpg" target="_blank" title="ver imagem completa">Ver Imagem Completa</a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto4.jpg" alt="abelha pousando em uma flor" />
+            <div class="descricao-imagem">
+                <a href="./images/foto4.jpg" target="_blank" title="ver imagem completa">Ver Imagem Completa</a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto5.jpg" alt="flor com gotas de água" />
+            <div class="descricao-imagem">
+                <a href="./images/foto5.jpg" target="_blank" title="ver imagem completa">Ver Imagem Completa</a>
+            </div>
+        </li>
+
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
