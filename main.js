@@ -1,11 +1,11 @@
 $(document).ready(function () {
   $("header button").click(function () {
-    $("form").slideDown();
+    $(".form-container").slideDown();
   });
-  $("#botao-cancelar").click(function () {
+  $(".form-cancel").click(function () {
     $("form").slideUp();
   });
-  $("form").on("submit", function (event) {
+  $(";form-container").on("submit", function (event) {
     event.preventDefault();
 
     const enderecoNovaImagem = $("#endereco-nova-imagem").val();
