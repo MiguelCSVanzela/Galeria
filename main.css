@@ -1,81 +1,148 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-header {
-    background-color: #450ba4;
-    padding: 16px 0;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    border-bottom: 16px solid #260062;
-    text-transform: uppercase;
+:root {
+  --forest: #97d8c4;
+  --dark: #2a2d34;
+  --rose: #d81159;
+  --sky: #118ab2;
+  --platium: #e6e8e6;
+  --white: #fcfcfc;
+  --jasmine: #ffd972;
 }
 
-header button {
-    margin-left: 16px;
+body {
+  background-color: var(--white);
 }
 
-form {
-    background-color: #d4a0f7;
-    padding: 16px 0;
-    text-align: center;
-    display: none;
+.button {
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  text-transform: uppercase;
 }
 
-input,
-button {
-    padding: 8px;
+.header-container {
+  background-color: var(--dark);
+  padding: 16px 0;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  border-bottom: 16px solid var(--platium);
+  text-transform: uppercase;
 }
 
-button {
-    background-color: #d34afc;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    text-transform: uppercase;
+.header-title {
+  font-weight: lighter;
 }
 
-#botao-cancelar {
-    background-color: #ff4000dc;
+.header-add {
+  margin-left: 16px;
 }
 
-ul {
-    display: flex;
-    flex-wrap: wrap;
+.form-container {
+  background-color: var(--sky);
+  padding: 8px 0;
+  text-align: center;
+  display: none;
 }
 
-ul li {
-    max-width: 25%;
-    list-style: none;
-    position: relative;
-    max-height: 280px;
-    overflow-y: hidden;
+.form-title {
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 
-ul li img {
-    width: 100%;
+.form-input {
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  padding: 8px;
+}
+
+.form-input::placeholder {
+  text-transform: uppercase;
+}
+
+.form-enter {
+  background-color: var(--forest);
+}
+
+.form-cancel {
+  background-color: var(--rose);
+}
+
+.form-cancel:hover,
+.form-enter:hover {
+  opacity: 0.5;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 120px;
+}
+
+.image-item {
+  list-style: none;
+  position: relative;
+  overflow-y: hidden;
+  border-radius: 8px;
+  margin: 8px;
+}
+
+.image {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .descricao-imagem {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 16px;
-    opacity: 0;
-    transition: all ease .5s;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 8px;
+  opacity: 0;
+  transition: all ease 0.5s;
 }
 
-.descricao-imagem a {
-    color: #fff;
-    text-decoration: none;
+.img-link {
+  color: var(--sky);
+  text-decoration: none;
 }
 
-ul li:hover .descricao-imagem {
-    opacity: 1;
+.image-item:hover .descricao-imagem {
+  opacity: 1;
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 120px;
+  background-color: var(--dark);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  height: 56px;
+  margin: 30px 20px;
+}
+
+.img:hover {
+  background-color: var(--white);
+  padding: 5px;
+  border-radius: 8px;
 }

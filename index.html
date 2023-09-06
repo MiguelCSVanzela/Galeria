@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/galery.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+    <title>GALERIA</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <title>Galaria</title>
-</head>
-
-<body>
-    <header>
-        <h1>Galeria de Fotos</h1>
-        <button type="button">Nova Imagem +</button>
+  <body>
+    <header class="header-container">
+      <h1 class="header-title">Galeria</h1>
+      <button class="button header-add" type="button">Nova Imagem +</button>
     </header>
 
-    <form>
-        <h2>Inserir Imagem</h2>
-        <input type="url" id="endereco-nova-imagem" required placeholder="url da imagem" />
-        <button type="submit">Adicionar</button>
-        <button type="reset" id="botao-cancelar">Cancelar</button>
+    <form class="form-container">
+      <h2 class="form-title">Imagem</h2>
+      <input
+        class="form-input"
+        type="url"
+        id="endereco-nova-imagem"
+        required
+        placeholder="Endereço Imagem"
+      />
+      <button class="button form-enter" type="submit">Adicionar</button>
+      <button class="button form-cancel" type="reset">Cancelar</button>
     </form>
-    <ul>
-        <li>
-            <img src="./images/foto1.jpg" alt="pintura de um gato" />
-            <div class="descricao-imagem">
-                <a href="./images/foto1.jpg" target="_blank" title="ver imagem completa">
-                    Ver Imagem Completa
-                </a>
-            </div>
-        </li>
-        <li>
-            <img src="./images/foto2.jpg" alt="flamingo rosa com pescoço curvado" />
-            <div class="descricao-imagem">
-                <a href="./images/foto2.jpg" target="_blank" title="ver imagem completa">Ver Imagem Completa</a>
-            </div>
-        </li>
-        <li>
-            <img src="./images/foto3.jpg" alt="filhotes de cães sendo segurado por um saco de pano" />
-            <div class="descricao-imagem">
-                <a href="./images/foto3.jpg" target="_blank" title="ver imagem completa">Ver Imagem Completa</a>
-            </div>
-        </li>
-        <li>
-            <img src="./images/foto4.jpg" alt="abelha pousando em uma flor" />
-            <div class="descricao-imagem">
-                <a href="./images/foto4.jpg" target="_blank" title="ver imagem completa">Ver Imagem Completa</a>
-            </div>
-        </li>
-        <li>
-            <img src="./images/foto5.jpg" alt="flor com gotas de água" />
-            <div class="descricao-imagem">
-                <a href="./images/foto5.jpg" target="_blank" title="ver imagem completa">Ver Imagem Completa</a>
-            </div>
-        </li>
 
+    <ul class="image-container">
+      <li class="image-item">
+        <img class="image" src="./images/foto1.jpg" alt="pintura de um gato" />
+        <div class="descricao-imagem">
+          <a
+            href="./images/foto1.jpg"
+            target="_blank"
+            title="ver imagem completa"
+            class="img-link"
+          >
+            IMAGEM COMPLETA
+          </a>
+        </div>
+      </li>
     </ul>
+
+    <footer class="footer-container">
+      <div class="social-links">
+        <a
+          class="link"
+          target="_blank"
+          href="https://www.linkedin.com/in/miguel-cs-vanzela/"
+          title="Link para o perfil do linkedin"
+        >
+          <img
+            class="img"
+            src="https://servidor-estaticos-git-main-miguelcsvanzela.vercel.app/linkedin.svg"
+            alt="link para o linkedin"
+          />
+        </a>
+        <a
+          class="link"
+          target="_blank"
+          href="https://github.com/MiguelCSVanzela"
+          title="Link para o github"
+        >
+          <img
+            class="img"
+            src="https://servidor-estaticos-git-main-miguelcsvanzela.vercel.app/github.svg"
+            alt="link a página git do engenheiro front-end miguel cs vanzela "
+          />
+        </a>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
